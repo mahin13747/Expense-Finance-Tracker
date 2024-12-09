@@ -1,0 +1,171 @@
+/* General Styles for the App */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(https://media.istockphoto.com/id/497602815/vector/emoticon-with-dollars.jpg?s=612x612&w=0&k=20&c=h0C9oMcyEjL7ayRNuHQBLL81R8opeD2sqZlqFisKXAc=);
+}
+
+/* App Container */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.9);
+  background-image: url(https://www.freeppt.net/background/crisis_business_concept_money_backgrounds.jpg);
+  background-repeat: round;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Group Members Section */
+h2{
+  color: rgb(252, 6, 190);
+}
+.group-members {
+  margin-top: 20px;
+}
+
+.group-members h2 {
+  margin-bottom: 0;
+}
+
+.group-members ul {
+  list-style-type: none;
+  padding-left: 5px;
+  color: #28a745;
+}
+
+.group-members li {
+  font-size: 16px;
+  padding: 9px 9px;
+
+}
+
+/* Add Expense Form Styling */
+form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd67;
+  width: 100%;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Expenses Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+/* Summary Report Table */
+.summary-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.summary-table th {
+  background-color: #28a745;
+  color: white;
+}
+
+.summary-table td {
+  background-color: #f9f9f9;
+}
+
+/* Shareable Report Section */
+.share-report {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.share-report button {
+  background-color: #17a2b8;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.share-report button:hover {
+  background-color: #117a8b;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  table th,
+  table td,
+  .summary-table th,
+  .summary-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form input,
+  form select {
+    padding: 8px;
+  }
+
+  form button {
+    padding: 8px;
+  }
+}
